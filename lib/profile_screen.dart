@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile_screen/Widgets/appbarwidget.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({Key? key}) : super(key: key);
@@ -192,41 +193,6 @@ class CapsoulStyleWidget extends StatelessWidget {
           color: txtcolor,
           fontWeight: FontWeight.w800,
         ),
-      ),
-    );
-  }
-}
-
-class AppBarWidgets extends StatelessWidget {
-  const AppBarWidgets(
-      {Key? key,
-      required this.backFunctionButtonAction,
-      required this.editFunctionButtonAction})
-      : super(key: key);
-  final Function backFunctionButtonAction;
-  final Function editFunctionButtonAction;
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 8.0, left: 8, right: 8),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          IconButton(
-              onPressed: () => backFunctionButtonAction(),
-              icon: const Icon(
-                Icons.arrow_back_outlined,
-                color: Colors.white,
-                size: 25,
-              )),
-          IconButton(
-              onPressed: () => editFunctionButtonAction(),
-              icon: const Icon(
-                Icons.edit,
-                color: Colors.white,
-                size: 25,
-              )),
-        ],
       ),
     );
   }

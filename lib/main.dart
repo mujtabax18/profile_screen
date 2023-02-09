@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:profile_screen/performance.dart';
 import 'package:profile_screen/profile_screen.dart';
-import 'Pack';
 
 void main() {
   runApp(const MyApp());
@@ -18,6 +18,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: ());
+        home: Performance());
   }
 }
