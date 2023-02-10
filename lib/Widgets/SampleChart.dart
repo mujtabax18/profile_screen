@@ -1,12 +1,12 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
-class PerformancePage extends StatefulWidget {
+class SampleChart extends StatefulWidget {
   @override
-  _PerformancePageState createState() => _PerformancePageState();
+  _SampleChartState createState() => _SampleChartState();
 }
 
-class _PerformancePageState extends State<PerformancePage> {
+class _SampleChartState extends State<SampleChart> {
   int count = 0;
   double average = 0;
   double normalizedAverage = 0;
